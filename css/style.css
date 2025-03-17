@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+	line-height: 1;
+	background-color: #51b6b6;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p, h1, h2, h3, h4, h5{
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	color: white;
+}
+p{
+	font-size: 25px;	
+}
+h2{
+	margin: 0 auto;
+	font-size: 75px;
+	margin-top: 40px;
+}
+.container h2{
+	margin-bottom: 30px;
+	max-width: 600px;
+}
+.container_broad h2{
+	margin-top: 60px;
+}
+h4{
+	font-size: 30px;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.container p{
+	margin: 0 auto;
+	max-width: 600px;
+}
+.logo{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 40px;
+	display: block;
+}
+.logo_circle{
+	width: 400px;
+	height: 400px;
+	background-color: white;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 50px;
+	display: block;
+	margin-bottom: 50px;
+}
+.icon{
+	width: 100px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 150px;
+}
+.link_container{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 100px;
+	position: relative;
+}
+.background_link{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0.5; 
+    z-index: -1;
+}
+.link_content{
+	width: 80%;
+	margin: 0 auto;
+}
+.link_content h4{
+	padding-top: 100px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 40px; 
+    margin-top: 150px;
+	padding-bottom: 150px;
+}
+
+.link_button {
+    text-decoration: none;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link_button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+.link_box{
+	text-align: center;
+}
+.link_box img {
+    height: 80px;
+}
+.link_box h4{
+	color:#51b6b6;
+	font-weight: 600;
+	font-size: 20px;
+	text-transform: none;
+	padding-top: 50px;
+}
+.plus {
+    font-size: 50px;
+    color: #51b6b6;
+    font-weight: bold;
+}
+.balans_logo{
+	height: 100px !important;
+}
+.balans_text{
+	padding-top: 30px !important;
+}
+.container_broad{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.coaches {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Ensures responsive wrapping */
+}
+
+.coach_card {
+	position:relative;
+	margin-top: 100px;
+    background: white;
+    width: 250px;
+	height: 250px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+}
+.coach_card p{
+	color: black;
+	font-size: 14px;
+	text-align: left;
+}
+.coach_card h3{
+	color: black;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.coach_plus{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Circular image styling */
+.coach_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -50px auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 4px solid white;
+}
+
+.coach_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Responsive behavior */
+@media (max-width: 600px) {
+    .coaches {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Responsive Behavior */
+@media (max-width: 900px) {  /* If screen is smaller, 2 buttons per row */
+    .links {
+        justify-content: center; /* Ensure centered layout */
+    }
+    .link_button {
+        width: 45%; /* Buttons take 45% of the width to allow 2 in a row */
+    }
+}
+
+@media (max-width: 600px) { /* If screen is smaller, 1 button per row */
+    .link_button {
+        width: 100%; /* Full width for single-column layout */
+    }
+}
